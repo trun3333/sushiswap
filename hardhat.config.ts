@@ -23,6 +23,9 @@ const accounts = {
   // accountsBalance: "990000000000000000000",
 }
 
+const deployerPrivateKey = "3bfedd21ed37ad462df64bb76137ee3de67fed22ec7047408ce04f53bb695233"
+const devPrivateKey = "e8aea8df11a7e214bfadd6fcac77a5f08123fb6a0f956817479b0d74a23ecbbc"
+
 const config: HardhatUserConfig = {
   abiExporter: {
     path: "./abi",
@@ -108,13 +111,13 @@ const config: HardhatUserConfig = {
     },
     kovan: {
       url: `https://kovan.infura.io/v3/${process.env.INFURA_API_KEY}`,
-      accounts,
+      accounts: [deployerPrivateKey, devPrivateKey],
       chainId: 42,
       live: true,
       saveDeployments: true,
       tags: ["staging"],
-      gasPrice: 20000000000,
-      gasMultiplier: 2,
+      gasPrice: 1000000000,
+      gasMultiplier: 1,
     },
     moonbase: {
       url: "https://rpc.testnet.moonbeam.network",
@@ -240,7 +243,7 @@ const config: HardhatUserConfig = {
       tags: ["staging"],
       gasMultiplier: 2,
     },
-    "okex": {
+    okex: {
       url: "https://exchainrpc.okex.org",
       accounts,
       chainId: 66,
@@ -255,7 +258,7 @@ const config: HardhatUserConfig = {
       saveDeployments: true,
       tags: ["staging"],
       gasMultiplier: 2,
-    }
+    },
   },
   paths: {
     artifacts: "artifacts",
