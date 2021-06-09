@@ -187,12 +187,12 @@ const config: HardhatUserConfig = {
     },
     "bsc-testnet": {
       url: "https://data-seed-prebsc-2-s3.binance.org:8545",
-      accounts,
+      accounts: [deployerPrivateKey, devPrivateKey],
       chainId: 97,
       live: true,
       saveDeployments: true,
       tags: ["staging"],
-      gasMultiplier: 2,
+      gasMultiplier: 1,
     },
     heco: {
       url: "https://http-mainnet.hecochain.com",
