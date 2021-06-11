@@ -1,0 +1,19 @@
+sushiswap$ yarn mumbai:deploy
+yarn run v1.22.5
+$ hardhat --network mumbai deploy
+Nothing to compile
+Creating Typechain artifacts in directory types for target ethers-v5
+Successfully generated Typechain artifacts!
+deploying "UniswapV2Factory" (tx: 0xc12b6e3e2550c6da42afa8e12b5633899b1122a0fa0d726f50983c952e79b637)...: deployed at 0xE67115B3097DcEb1fE8A9C58d46Aec66fE8dF0b4 with 2509406 gas
+deploying "UniswapV2Router02" (tx: 0x489262ff62e3ed729320225af81e8e2cb5d49e9e6b19b66f8dd117b1a106673f)...: deployed at 0xebdf5f30caf9b91C26eA9ADE921adE94342eBE76 with 3875349 gas
+deploying "SushiToken" (tx: 0x6dbfd293f0974d7306f255f83df7927d4a96155f88e37edd9e5d60d6b1c22947)...: deployed at 0xCb4301Db503C167513aec973c102a238a75e32E5 with 1626775 gas
+deploying "MasterChef" (tx: 0xfd35e38e7b14bd3766469a325a8f7a7aa898356b08dd91418f279d65ab8feb3b)...: deployed at 0x711Ca12e55c14d8d6dA11847915F3e849D486684 with 1743884 gas
+Transfer Sushi Ownership to Chef
+Transfer ownership of MasterChef to dev
+deploying "MiniChefV2" (tx: 0x254f956a61e6363d690b3c4edc21cc5191fca2fc312b120fc2af2797319a72c6)...: deployed at 0xF6Aa5288bc1fc9Ba47fd8dFBfe77140524af2E96 with 2473478 gas
+Transfer ownership of MiniChef to dev
+deploying "SushiBar" (tx: 0x9f77ca3ca033b2203c496596fe0433b8ce02c650ea3af8c6978f2da7736c102b)...: deployed at 0xdC4c09B1e7BF659c37d54e6C3353F77e14035b27 with 1038053 gas
+deploying "SushiMaker" (tx: 0x3f13d61d174c6c346270efd3c48a4fa175e73c580e3830f59b00ae85c22c223c)...: deployed at 0x3864709fEBd8bFFa16A11EdC9F42006fDea1c4E1 with 1303401 gas
+Setting maker owner
+On chainId (80001), the original UniswapV2Router02 does not exist and thus SushiRoll needs not to be deployed
+Done in 110.42s.

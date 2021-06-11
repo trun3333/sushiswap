@@ -163,13 +163,14 @@ const config: HardhatUserConfig = {
       saveDeployments: true,
     },
     mumbai: {
-      url: "https://rpc-mumbai.maticvigil.com/",
-      accounts,
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [deployerPrivateKey, devPrivateKey],
       chainId: 80001,
       live: true,
       saveDeployments: true,
       tags: ["staging"],
-      gasMultiplier: 2,
+      gasPrice: 1000000000,
+      gasMultiplier: 1,
     },
     xdai: {
       url: "https://rpc.xdaichain.com",
